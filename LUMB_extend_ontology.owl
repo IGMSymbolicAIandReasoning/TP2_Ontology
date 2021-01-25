@@ -1,0 +1,269 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/pjgal/ontologies/2021/0/untitled-ontology-5"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/pjgal/ontologies/2021/0/untitled-ontology-5">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AstraZeneca"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Birthday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CanSinoBi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Covid19-Vaccinated"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drug"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Moderna"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Name"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PersonalInformations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pfizer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpoutnikV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Surname"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VaccinatedPerson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vaccine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Zipcode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#covid-19Vaccines"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBeenVaccinatedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Female"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Male"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Covid19-Vaccinated"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasBeenVaccinatedBy"/>
+            <Class IRI="#covid-19Vaccines"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Person"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasA"/>
+            <Class IRI="#Birthday"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Person"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasA"/>
+            <Class IRI="#Gender"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Person"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasA"/>
+            <Class IRI="#ID"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Person"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasA"/>
+            <Class IRI="#Name"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Person"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasA"/>
+            <Class IRI="#Surname"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Person"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasA"/>
+            <Class IRI="#Zipcode"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#VaccinatedPerson"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasA"/>
+            <Class IRI="#Vaccine"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AstraZeneca"/>
+        <Class IRI="#covid-19Vaccines"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Birthday"/>
+        <Class IRI="#PersonalInformations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CanSinoBi"/>
+        <Class IRI="#covid-19Vaccines"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Covid19-Vaccinated"/>
+        <Class IRI="#VaccinatedPerson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gender"/>
+        <Class IRI="#PersonalInformations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ID"/>
+        <Class IRI="#PersonalInformations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moderna"/>
+        <Class IRI="#covid-19Vaccines"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Name"/>
+        <Class IRI="#PersonalInformations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pfizer"/>
+        <Class IRI="#covid-19Vaccines"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpoutnikV"/>
+        <Class IRI="#covid-19Vaccines"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Surname"/>
+        <Class IRI="#PersonalInformations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VaccinatedPerson"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vaccine"/>
+        <Class IRI="#Drug"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zipcode"/>
+        <Class IRI="#PersonalInformations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#covid-19Vaccines"/>
+        <Class IRI="#Vaccine"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Birthday"/>
+        <Class IRI="#Gender"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Birthday"/>
+        <Class IRI="#ID"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Birthday"/>
+        <Class IRI="#Name"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Birthday"/>
+        <Class IRI="#Surname"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Birthday"/>
+        <Class IRI="#Zipcode"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Gender"/>
+        <Class IRI="#ID"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Gender"/>
+        <Class IRI="#Name"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Gender"/>
+        <Class IRI="#Surname"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Gender"/>
+        <Class IRI="#Zipcode"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ID"/>
+        <Class IRI="#Name"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ID"/>
+        <Class IRI="#Surname"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ID"/>
+        <Class IRI="#Zipcode"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Name"/>
+        <Class IRI="#Surname"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Name"/>
+        <Class IRI="#Zipcode"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Surname"/>
+        <Class IRI="#Zipcode"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Gender"/>
+        <NamedIndividual IRI="#Female"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gender"/>
+        <NamedIndividual IRI="#Male"/>
+    </ClassAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
