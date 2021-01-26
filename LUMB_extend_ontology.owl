@@ -6,6 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/pjgal/ontologies/2021/0/untitled-ontology-5">
+    <Prefix name="" IRI="http://www.semanticweb.org/pjgal/ontologies/2021/0/untitled-ontology-5"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -15,34 +16,28 @@
         <Class IRI="#AstraZeneca"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Birthday"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#CanSinoBi"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Covid19-Vaccinated"/>
+        <Class IRI="#Covid19-Vacinated"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Drug"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Female"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Gender"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ID"/>
+        <Class IRI="#Male"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Moderna"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Name"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Person"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PersonalInformations"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Pfizer"/>
@@ -51,216 +46,135 @@
         <Class IRI="#SpoutnikV"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Surname"/>
+        <Class IRI="#VacinatedPerson"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#VaccinatedPerson"/>
+        <Class IRI="#Vacine"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Vaccine"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Zipcode"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#covid-19Vaccines"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasA"/>
+        <Class IRI="#covid-19Vacines"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasBeenVaccinatedBy"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isA"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBirthday"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSurname"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasZipcode"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Female"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Male"/>
     </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nouille"/>
+    </Declaration>
     <EquivalentClasses>
-        <Class IRI="#Covid19-Vaccinated"/>
+        <Class IRI="#Covid19-Vacinated"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty IRI="#hasBeenVaccinatedBy"/>
-            <Class IRI="#covid-19Vaccines"/>
+            <Class IRI="#covid-19Vacines"/>
         </ObjectMinCardinality>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#Person"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasA"/>
-            <Class IRI="#Birthday"/>
-        </ObjectExactCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Person"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasA"/>
+            <ObjectProperty IRI="#isA"/>
             <Class IRI="#Gender"/>
         </ObjectExactCardinality>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#Person"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasA"/>
-            <Class IRI="#ID"/>
-        </ObjectExactCardinality>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasBirthday"/>
+        </DataExactCardinality>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#Person"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasA"/>
-            <Class IRI="#Name"/>
-        </ObjectExactCardinality>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasId"/>
+        </DataExactCardinality>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#Person"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasA"/>
-            <Class IRI="#Surname"/>
-        </ObjectExactCardinality>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasName"/>
+        </DataExactCardinality>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#Person"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasA"/>
-            <Class IRI="#Zipcode"/>
-        </ObjectExactCardinality>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasSurname"/>
+        </DataExactCardinality>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#VaccinatedPerson"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="#hasA"/>
-            <Class IRI="#Vaccine"/>
-        </ObjectMinCardinality>
+        <Class IRI="#Person"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasZipcode"/>
+        </DataExactCardinality>
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#AstraZeneca"/>
-        <Class IRI="#covid-19Vaccines"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Birthday"/>
-        <Class IRI="#PersonalInformations"/>
+        <Class IRI="#covid-19Vacines"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CanSinoBi"/>
-        <Class IRI="#covid-19Vaccines"/>
+        <Class IRI="#covid-19Vacines"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Covid19-Vaccinated"/>
-        <Class IRI="#VaccinatedPerson"/>
+        <Class IRI="#Covid19-Vacinated"/>
+        <Class IRI="#VacinatedPerson"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Female"/>
         <Class IRI="#Gender"/>
-        <Class IRI="#PersonalInformations"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ID"/>
-        <Class IRI="#PersonalInformations"/>
+        <Class IRI="#Male"/>
+        <Class IRI="#Gender"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Moderna"/>
-        <Class IRI="#covid-19Vaccines"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Name"/>
-        <Class IRI="#PersonalInformations"/>
+        <Class IRI="#covid-19Vacines"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pfizer"/>
-        <Class IRI="#covid-19Vaccines"/>
+        <Class IRI="#covid-19Vacines"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SpoutnikV"/>
-        <Class IRI="#covid-19Vaccines"/>
+        <Class IRI="#covid-19Vacines"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Surname"/>
-        <Class IRI="#PersonalInformations"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#VaccinatedPerson"/>
+        <Class IRI="#VacinatedPerson"/>
         <Class IRI="#Person"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Vaccine"/>
+        <Class IRI="#Vacine"/>
         <Class IRI="#Drug"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Zipcode"/>
-        <Class IRI="#PersonalInformations"/>
+        <Class IRI="#covid-19Vacines"/>
+        <Class IRI="#Vacine"/>
     </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#covid-19Vaccines"/>
-        <Class IRI="#Vaccine"/>
-    </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#Birthday"/>
-        <Class IRI="#Gender"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Birthday"/>
-        <Class IRI="#ID"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Birthday"/>
-        <Class IRI="#Name"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Birthday"/>
-        <Class IRI="#Surname"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Birthday"/>
-        <Class IRI="#Zipcode"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Gender"/>
-        <Class IRI="#ID"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Gender"/>
-        <Class IRI="#Name"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Gender"/>
-        <Class IRI="#Surname"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Gender"/>
-        <Class IRI="#Zipcode"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#ID"/>
-        <Class IRI="#Name"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#ID"/>
-        <Class IRI="#Surname"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#ID"/>
-        <Class IRI="#Zipcode"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Name"/>
-        <Class IRI="#Surname"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Name"/>
-        <Class IRI="#Zipcode"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Surname"/>
-        <Class IRI="#Zipcode"/>
-    </DisjointClasses>
-    <ClassAssertion>
-        <Class IRI="#Gender"/>
-        <NamedIndividual IRI="#Female"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Gender"/>
-        <NamedIndividual IRI="#Male"/>
-    </ClassAssertion>
 </Ontology>
 
 
