@@ -175,6 +175,14 @@
         <Class IRI="#covid-19Vacines"/>
         <Class IRI="#Vacine"/>
     </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBeenVaccinatedBy"/>
+        <Class IRI="#Vacine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBeenVaccinatedBy"/>
+        <Class IRI="#Vacine"/>
+    </ObjectPropertyRange>
 </Ontology>
 
 
